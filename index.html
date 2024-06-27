@@ -27,6 +27,7 @@
   <link id="pagestyle" href="assets/css/argon-dashboard.css?v=2.0.4" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">    
   <style>
@@ -40,21 +41,26 @@
         font-style: normal;
         
     } */
-    .btn-group-vertical {
+    .button-group button {
         width: 100%;
-        margin-top: 40px;
-    }
-    .btn-group-vertical button {
-        margin-bottom: 20px;
+        text-align: left;
         padding-top: 20px;
         padding-bottom: 20px;
         text-align: left;
         padding-left: 40px;
     }
+    /* .btn-group-vertical button { */
+        /* margin-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: left;
+        padding-left: 40px;
+        width: 100%;
+    }
     .btn-group-vertical button i {
         margin-right: 20px;
         font-size: 15px;
-    }
+    } */
 </style>
 </head>
 
@@ -70,7 +76,7 @@
                 </div>
                 <div class="col">
                     <div class="col-sm-12 col-md-6 offset-md-3">
-                        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                        <div class="col button-group">
                             <button type="button" class="btn btn-secondary btn-round"><i class="fa-solid fa-user"></i> RSVP NOW</button>
                             <button type="button" class="btn btn-secondary btn-round"><i class="fa-solid fa-video"></i> PRE-WEDDING FILM</button>
                             <button type="button" class="btn btn-secondary btn-round"><i class="fa-solid fa-envelope"></i> E-INVITATION</button>
