@@ -27,24 +27,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
   <style>
-    /* body {
-        background-image: url('./wedding-bg.jpg');
-        background-repeat: no-repeat;
-        padding-top: 100px;
-        font-family: "Playwrite NO", cursive;
-        font-optical-sizing: auto;
-        font-weight: normal;
-        font-style: normal;
-        
-    } */
-     body {
+    .satisfy {
       font-family: "Satisfy", cursive;
       font-weight: 400;
       font-style: normal;
-     }
+    }
+    .playwrite {
+      font-family: "Playwrite NO", cursive;
+      font-optical-sizing: auto;
+      font-weight: normal;
+      font-style: normal;
+    }
     .button-group button {
         width: 100%;
         text-align: left;
@@ -52,36 +48,28 @@
         padding-bottom: 20px;
         padding-left: 40px;
     }
-    /* .btn-group-vertical button { */
-        /* margin-bottom: 20px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        text-align: left;
-        padding-left: 40px;
-        width: 100%;
-    }*/
     .button-group button i, .button-group button svg {
         margin-right: 5px;
     }
 </style>
 </head>
 
-<body class="g-sidenav-show   bg-gray-100">
+<body class="bg-gray-100">
   <main class="main-content position-relative border-radius-lg ">
     <div class="container-fluid py-4">
       <div class="row">
         <div class="container">
             <div class="col">
                 <div class="col text-center">
-                    <h1>James & Lani</h1>
-                    <p>NOT ME, BUT WE</p>
+                    <h1 class="satisfy" style="font-weight: bold;">James & Lani</h1>
+                    <p class="playwrite">NOT ME, BUT WE</p>
                 </div>
                 <div class="col">
                     <div class="col-sm-12 col-md-6 offset-md-3">
-                        <div class="col button-group">
+                        <div class="col text-start button-group">
                             <button type="button" class="btn btn-secondary btn-round"><i class="fa-solid fa-user"></i> RSVP NOW</button>
                             <button type="button" class="btn btn-secondary btn-round"><i class="fa-solid fa-video"></i> PRE-WEDDING FILM</button>
-                            <button type="button" class="btn btn-secondary btn-round"><i class="fa-solid fa-envelope"></i> E-INVITATION</button>
+                            <button onclick="window.location.href='https://www.youtube.com/watch?v=7HffENsEeXg'" class="btn btn-secondary btn-round"><i class="fa-solid fa-envelope"></i> E-INVITATION</button>
                             <button type="button" class="btn btn-secondary btn-round"><i class="fa-solid fa-champagne-glasses"></i> CEREMONY & VENUE</button>
                             <button type="button" class="btn btn-secondary btn-round"><i class="fa-solid fa-heart"></i> WEDDING FAQS</button>
                             <button type="button" class="btn btn-secondary btn-round"><i class="fa-solid fa-music"></i> TRAVEL TUNES</button>
@@ -90,7 +78,7 @@
                     </div>
                 </div>
                 <div class="col text-center">
-                    <p>#JAMESANDLANIASONE</p>
+                  <p>#JAMESANDLANIASONE</p>
                 </div>
             </div>
         </div>
