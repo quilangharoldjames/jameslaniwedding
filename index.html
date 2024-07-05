@@ -85,6 +85,29 @@
 		.fh5co-cover {
 			height: 1080px !important;
 		}
+		.simply-countdown > .simply-section {
+            width: 80px;
+            height: 80px;
+        }
+        .simply-countdown > .simply-section .simply-amount {
+            font-size: 25px;
+        }
+        .simply-countdown > .simply-section .simply-word {
+            font-size: 10px;
+        }
+        .simply-countdown > .simply-section > div {
+            height: 80px;
+            width: 80px;
+        }
+        .simply-countdown > .simply-section {
+            background-color: rgb(4, 99, 7);
+        }
+		#fh5co-header .display-tc h2, #fh5co-counter .display-tc h2, .fh5co-cover .display-tc h2 {
+			margin-bottom: 50px;
+		}
+		#fh5co-header .display-tc h2, #fh5co-counter .display-tc h2, .fh5co-cover .display-tc h2 {
+			margin-top: -15px;
+		}
 	</style>
 
 	</head>
@@ -135,9 +158,12 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
-						<div class="display-tc animate-box" style="padding-top: 80px;" data-animate-effect="fadeIn">
+						<div class="display-tc animate-box" style="padding-top: 50px;" data-animate-effect="fadeIn">
 							<h1>James &amp; Lani</h1>
-							<h2>We Are Getting Married</h2>
+							<h2>We Are Getting Married In</h2>
+							<div style="margin-bottom: 40px;">
+								<div class="simply-countdown simply-countdown-one"></div>
+							</div>
 							<div class="my-btn-group">
 								<button type="button" class="btn btn-secondary btn-round"><i class="fa-solid fa-user"></i>  RSVP NOW</button>
 								<button type="button" class="btn btn-secondary btn-round"><i class="fa-solid fa-video"></i>  PRE-WEDDING FILM</button>
@@ -145,12 +171,11 @@
                             	<button type="button" onclick="window.location.href='/ceremony-and-venue'" class="btn btn-secondary btn-round"><i class="fa-solid fa-champagne-glasses"></i> CEREMONY & VENUE</button>
 								<button type="button" class="btn btn-secondary btn-round"><i class="fa-solid fa-heart"></i>  WEDDING FAQS</button>
 								<button type="button" class="btn btn-secondary btn-round"><i class="fa-solid fa-music"></i>  TRAVEL TUNES</button>
-								<button type="button" onclick="window.location.href='/countdown'" class="btn btn-secondary btn-round"><i class="fa-regular fa-clock"></i>  COUNTDOWN TO LOVE</button>
 								<button type="button" class="btn btn-secondary btn-round"><i class="fa-solid fa-book"></i>  OUR STORY</button>
 								<button type="button" class="btn btn-secondary btn-round"><i class="fa-solid fa-bell"></i>  DETAILS / REMINDERS</button>
 							</div>
 							<div class="hashstag">
-								<span>#dinapinakawalaLANIJIM</span>
+								<span>#dinapinakawaLANIJIM</span>
 								<span>#LANIfoundJIMissingpiece</span>
 							</div>
 						</div>
@@ -647,23 +672,23 @@
 	<script src="js/main.js?v=1"></script>
 
 	<script>
-    var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
-
-    // default example
-    simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate()
-    });
-
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
-    });
-</script>
+		var d = new Date("August 8, 2024 10:00:00");
+	
+		// default example
+		simplyCountdown('.simply-countdown-one', {
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate()
+		});
+	
+		//jQuery example
+		$('#simply-countdown-losange').simplyCountdown({
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate(),
+			enableUtc: false
+		});
+	</script>
 
 	</body>
 </html>
