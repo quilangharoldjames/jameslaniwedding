@@ -1841,3 +1841,13 @@ form label {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width: 480px) {
+  #fh5co-header .display-tc h1, #fh5co-counter .display-tc h1, .fh5co-cover .display-tc h1 {
+      font-size: 60px;
+  }
+}
+
+#fh5co-header .display-tc .btn, #fh5co-counter .display-tc .btn, .fh5co-cover .display-tc .btn {
+  color: #046307;
+}
