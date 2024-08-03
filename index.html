@@ -172,13 +172,13 @@
 			
 		</div>
 	</nav> -->
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(cover.jpg); background-size: cover; background-position: center">
+	<!-- <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(cover.jpg); background-size: cover; background-position: center">
 		<div class="overlay"></div>
 		<div class="row" style="position: relative; height: 80vh;">
 			<img src="profile.jpg" class="img-profile" />
 		</div>
-	</header>
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(background.jpg); background-size: cover; background-position: center">
+	</header> -->
+	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(cover.jpg); background-size: cover; background-position: center">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -186,8 +186,10 @@
 					<div class="display-t" style="padding-bottom: 200px;">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<h1 style="margin-top: 2vh;">James &amp; Lani</h1>
-							
 							<br/>
+							<div class="row" style="position: relative; height: 20vh;">
+								<img src="profile.jpg" class="img-profile" />
+							</div>
 							<h2>We Are Getting Married In</h2>
 							<div style="margin-bottom: 40px;">
 								<div class="simply-countdown simply-countdown-one"></div>
@@ -225,7 +227,7 @@
 			<div class="couple-wrap animate-box">
 				<div class="couple-half">
 					<div class="groom">
-						<img src="images/groom.jpg" alt="groom" class="img-responsive">
+						<img src="images/groom.jpg" alt="groom" class="img-August 8, 2024 10:00:00responsive">
 					</div>
 					<div class="desc-groom">
 						<h3>Joefrey Mahusay</h3>
@@ -546,7 +548,7 @@
 											<p>"Far far away, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
 										</blockquote>
 									</div>
-								</div>
+								</div>August 8, 2024 10:00:00
 							</div>
 						</div>
 					</div>
@@ -700,22 +702,32 @@
 	<script src="js/main.js?v=1"></script>
 
 	<script>
-		var d = new Date("August 8, 2024 10:00:00");
+		var d = new Date("2024-08-08T10:00:00.000+08:00");
+		console.log(d.getFullYear())
+		console.log(d.getMonth() + 1)
+		console.log(d.getDate())
+		console.log(d.getHours())
+		console.log(d.getMinutes())
+		console.log(d.getSeconds())
 	
 		// default example
 		simplyCountdown('.simply-countdown-one', {
 			year: d.getFullYear(),
 			month: d.getMonth() + 1,
-			day: d.getDate()
-		});
-	
-		//jQuery example
-		$('#simply-countdown-losange').simplyCountdown({
-			year: d.getFullYear(),
-			month: d.getMonth() + 1,
 			day: d.getDate(),
+			hours: d.getHours(),
+			minutes: d.getMinutes(),
+			seconds: d.getSeconds(),
 			enableUtc: false
 		});
+	
+		// //jQuery example
+		// $('#simply-countdown-losange').simplyCountdown({
+		// 	year: d.getFullYear(),
+		// 	month: d.getMonth() + 1,
+		// 	day: d.getDate(),
+		// 	enableUtc: false
+		// });
 	</script>
 
 	</body>
